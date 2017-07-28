@@ -8,24 +8,17 @@ export default class AppContainer extends React.Component {
 		super(props);
 		this.state = {
 			'repos': [],
-			// 'anim': new Animated.Value(0);
 		}
-	}
-
-	componentDidMount() {
-		// Animated.timing(this.state.anim, {toValue: 1}).start();
-
-	// 	$.ajax('https://api.github.com/users/dweste01/repos')
-	// 	.then(res => {
-	// 		this.setState({'repos': res});
-	// 	}).catch(console.error)
 	}
 
 	render() {	
 		return (
 			<div>
-				<p id="title">Danielle Westerman</p>
+				<p id="title" className="animated jello">Danielle Westerman</p>
 				<GitRepos />
+				  <div className="wow bounceInUp">
+                  Content to Reveal Here
+                  </div>
 			</div>
 		)
 	}
