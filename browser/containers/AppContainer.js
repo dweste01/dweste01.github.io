@@ -14,9 +14,9 @@ export default class AppContainer extends React.Component {
 	render() {	
 		return (
 			<div>
-				<p id="title" className="animated jello">Danielle Westerman</p>
+				<p id="title" className="animated fadeIn" style={{marginTop: window.innerHeight/2 - 44, marginBottom: window.innerHeight/2 - 44}}>Danielle Westerman</p>
 				<GitRepos />
-				  <div className="wow bounceInUp">
+				  <div className="wow fadeIn">
                   Content to Reveal Here
                   </div>
 			</div>

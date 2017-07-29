@@ -10884,7 +10884,7 @@ exports = module.exports = __webpack_require__(100)(undefined);
 
 
 // module
-exports.push([module.i, "#title {\n  font-family: 'Raleway', sans-serif;\n  text-align: center;\n  font-size: 60px;\n  color: #636363;\n  -webkit-animation: fadeIn 2.5s;\n  letter-spacing: 7px; }\n\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n    margin-top: -50px; }\n  to {\n    opacity: 1;\n    margin-top: 0px; } }\n", ""]);
+exports.push([module.i, "#title {\n  font-family: 'Raleway', sans-serif;\n  text-align: center;\n  font-size: 60px;\n  color: #636363;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n/*@keyframes fadeIn {\n\tfrom {opacity: 0; margin-top: -50px;}\n\tto {opacity: 1; margin-top: 0px;}\n}*/\n", ""]);
 
 // exports
 
@@ -24106,13 +24106,13 @@ var AppContainer = function (_React$Component) {
 				null,
 				_react2.default.createElement(
 					'p',
-					{ id: 'title', className: 'animated jello' },
+					{ id: 'title', className: 'animated fadeIn', style: { marginTop: window.innerHeight / 2 - 44, marginBottom: window.innerHeight / 2 - 44 } },
 					'Danielle Westerman'
 				),
 				_react2.default.createElement(_GitRepos2.default, null),
 				_react2.default.createElement(
 					'div',
-					{ className: 'wow bounceInUp' },
+					{ className: 'wow fadeIn' },
 					'Content to Reveal Here'
 				)
 			);
