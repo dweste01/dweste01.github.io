@@ -1,14 +1,42 @@
 
-#title {
+p {
 	font-family: 'Raleway', sans-serif;
+	color: #636363;
+}
+
+span {
+	font-family: 'Raleway', sans-serif;
+	color: #636363;
+}
+
+a {
+	&:link {
+		color: #636363;
+	}
+	&:visited {
+		color: #636363;
+	}
+}
+
+#title {
 	text-align: center;
 	font-size: 60px;
-	color: #636363;
 	-webkit-animation-duration: 4s;
 	letter-spacing: 7px;
 }
 
-/*@keyframes fadeIn {
-	from {opacity: 0; margin-top: -50px;}
-	to {opacity: 1; margin-top: 0px;}
-}*/
+#github {
+	text-align: center;
+	font-size: 40px;
+	-webkit-animation-duration: 1s;
+}
+
+.repo {
+	margin: 20px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
