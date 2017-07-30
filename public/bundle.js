@@ -9819,7 +9819,7 @@ exports = module.exports = __webpack_require__(85)(undefined);
 
 
 // module
-exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nspan {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n  a:link {\n    color: #636363; }\n  a:visited {\n    color: #636363; }\n  a:hover {\n    color: #40E0D0;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n#github {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProj {\n  margin: 0px 10px; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px;\n  margin-bottom: 0px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredDemo {\n  text-align: center; }\n  .featuredDemo:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n", ""]);
+exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #40E0D0; }\n  a:link {\n    color: #40E0D0; }\n  a:visited {\n    color: #40E0D0; }\n  a:hover {\n    color: #636363;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n#github {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProj {\n  margin: 0px 10px; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredLinks {\n  text-align: center; }\n  .featuredLinks:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n", ""]);
 
 // exports
 
@@ -23121,15 +23121,19 @@ var GitRepos = function (_React$Component) {
 								{ key: idx, className: 'col-md-4' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'panel panel-default', style: { width: window.innerWidth / 4 } },
+									{ className: 'panel panel-default', style: { marginLeft: 30, marginRight: 30 } },
 									_react2.default.createElement(
 										'div',
-										{ className: 'panel-body', style: { justifyContent: 'center' } },
+										{ className: 'panel-body' },
 										_react2.default.createElement(
 											'a',
 											{ target: '_blank', href: repo.html_url },
 											_react2.default.createElement('img', { src: 'files/img/gitLogo.png', style: { height: 30, width: 60 } }),
-											repo.name
+											_react2.default.createElement(
+												'span',
+												{ style: { fontSize: 16 } },
+												repo.name
+											)
 										)
 									)
 								)
@@ -23209,19 +23213,33 @@ var FeaturedProjects = function (_React$Component) {
 									_react2.default.createElement(
 										"p",
 										{ className: "featuredTitle" },
-										_react2.default.createElement(
-											"a",
-											{ target: "_blank", href: "https://github.com/jhoscar1/capstone" },
-											"I (AR)t NY"
-										)
+										"I (AR)t NY"
 									),
 									_react2.default.createElement(
-										"p",
-										{ className: "featuredDemo" },
+										"div",
+										{ className: "row", style: { marginBottom: 10 } },
 										_react2.default.createElement(
-											"a",
-											{ href: "https://www.youtube.com/watch?v=Cal59NL6_0c" },
-											"Demo"
+											"span",
+											{ className: "featuredLinks col-md-6" },
+											_react2.default.createElement(
+												"a",
+												{ href: "https://www.youtube.com/watch?v=Cal59NL6_0c" },
+												"Demo"
+											)
+										),
+										_react2.default.createElement(
+											"span",
+											null,
+											"     "
+										),
+										_react2.default.createElement(
+											"span",
+											{ className: "featuredLinks col-md-6" },
+											_react2.default.createElement(
+												"a",
+												{ target: "_blank", href: "https://github.com/jhoscar1/capstone" },
+												"Github"
+											)
 										)
 									),
 									_react2.default.createElement(
@@ -23255,8 +23273,8 @@ var FeaturedProjects = function (_React$Component) {
 									),
 									_react2.default.createElement(
 										"p",
-										{ className: "featuredDemo" },
-										"Capstone project at Fullstack Academy with teammates ",
+										{ className: "featuredLinks" },
+										"4-week Capstone project at Fullstack Academy with teammates ",
 										_react2.default.createElement(
 											"a",
 											{ href: "https://github.com/christiancw" },
@@ -23268,7 +23286,7 @@ var FeaturedProjects = function (_React$Component) {
 											{ href: "https://github.com/phoyt1" },
 											"Pat"
 										),
-										", and ",
+										", & ",
 										_react2.default.createElement(
 											"a",
 											{ href: "https://github.com/jhoscar1" },
@@ -23291,24 +23309,28 @@ var FeaturedProjects = function (_React$Component) {
 									_react2.default.createElement(
 										"p",
 										{ className: "featuredTitle" },
-										_react2.default.createElement(
-											"a",
-											{ target: "_blank", href: "https://piscesaquascaping.herokuapp.com/" },
-											"Pisces Aquascaping ",
-											_react2.default.createElement(
-												"span",
-												{ style: { fontSize: 12 } },
-												"(deployed)"
-											)
-										)
+										"Pisces Aquascaping"
 									),
 									_react2.default.createElement(
-										"p",
-										{ className: "featuredDemo" },
+										"div",
+										{ className: "row", style: { marginBottom: 10 } },
 										_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/elinemzer/grace-shopper" },
-											"Github"
+											"span",
+											{ className: "featuredLinks col-md-6" },
+											_react2.default.createElement(
+												"a",
+												{ target: "_blank", href: "https://piscesaquascaping.herokuapp.com/" },
+												"Deployed"
+											)
+										),
+										_react2.default.createElement(
+											"span",
+											{ className: "featuredLinks col-md-6" },
+											_react2.default.createElement(
+												"a",
+												{ href: "https://github.com/elinemzer/grace-shopper" },
+												"Github"
+											)
 										)
 									),
 									_react2.default.createElement(
@@ -23337,8 +23359,8 @@ var FeaturedProjects = function (_React$Component) {
 									),
 									_react2.default.createElement(
 										"p",
-										{ className: "featuredDemo" },
-										"\"Grace Shopper\" project at Fullstack Academy with teammates ",
+										{ className: "featuredLinks" },
+										"2-week \"Grace Shopper\" project at Fullstack Academy with teammates ",
 										_react2.default.createElement(
 											"a",
 											{ href: "https://github.com/elinemzer" },
@@ -23350,7 +23372,7 @@ var FeaturedProjects = function (_React$Component) {
 											{ href: "https://github.com/J-Wicks" },
 											"Jeremy"
 										),
-										", and ",
+										", & ",
 										_react2.default.createElement(
 											"a",
 											{ href: "https://github.com/emilyacres" },
