@@ -1,21 +1,34 @@
+$text-color: #636363;
+$link-color: #40E0D0;
 
 p {
 	font-family: 'Raleway', sans-serif;
-	color: #636363;
+	color: $text-color;
 }
 
 span {
 	font-family: 'Raleway', sans-serif;
-	color: #636363;
+	color: $text-color;
+}
+
+ul {
+	font-family: 'Raleway', sans-serif;
+	color: $text-color;
 }
 
 a {
+	font-family: 'Raleway', sans-serif;
+	color: $text-color;
 	&:link {
-		color: #636363;
+		color: $text-color;
 	}
 	&:visited {
-		color: #636363;
+		color: $text-color;
 	}
+	&:hover {
+		color: $link-color;
+		text-decoration: none;
+	};
 }
 
 #title {
@@ -31,12 +44,27 @@ a {
 	-webkit-animation-duration: 1s;
 }
 
-.repo {
-	margin: 20px;
+.featuredTitle {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 0px;
+	&:hover {
+		text-decoration: none;
+	};
 }
 
+.featuredDemo {
+	text-align: center;
+	&:hover {
+		text-decoration: none;
+	};
+}
 .container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+.list {
+	padding-left: 20px;
 }

@@ -19,13 +19,14 @@ export default class GitRepos extends React.Component {
 		return (
 			<div>
 				<p id="github" className="wow zoomIn">Github Repos</p>
+				<div className='row'>
 				<div className='container'>
 				{
 					this.state.repos.map((repo, idx) => {
 					return (
-						<div key={idx}>
-							<div className="panel panel-default repo">
-							  <div className="panel-body">
+						<div key={idx} className="col-md-4">
+							<div className="panel panel-default" style={{width: window.innerWidth/4}}>
+							  <div className="panel-body" style={{justifyContent: 'center'}}>
 								<a target="_blank" href={repo.html_url}>
 									<img src='files/img/gitLogo.png' style={{height: 30, width: 60}}></img>
 									<span>{repo.name}</span>
@@ -35,6 +36,7 @@ export default class GitRepos extends React.Component {
 						</div>)
 					})
 				}
+				</div>
 				</div>
 			</div>
 		)
