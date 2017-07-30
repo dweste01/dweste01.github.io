@@ -29,7 +29,7 @@ export default class GitRepos extends React.Component {
 							  <div className="panel-body" style={{justifyContent: 'center'}}>
 								<a target="_blank" href={repo.html_url}>
 									<img src='files/img/gitLogo.png' style={{height: 30, width: 60}}></img>
-									<span>{repo.name}</span>
+									{repo.name}
 								</a>
 							  </div>
 							</div>

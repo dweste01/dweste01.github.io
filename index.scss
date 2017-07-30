@@ -44,6 +44,15 @@ a {
 	-webkit-animation-duration: 1s;
 }
 
+.featuredProj {
+	margin: 0px 10px;
+}
+
+.featuredProjContainer {
+	display: flex;
+	flex-direction: column;
+}
+
 .featuredTitle {
 	text-align: center;
 	font-size: 24px;

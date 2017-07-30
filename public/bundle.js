@@ -9819,7 +9819,7 @@ exports = module.exports = __webpack_require__(85)(undefined);
 
 
 // module
-exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nspan {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n  a:link {\n    color: #636363; }\n  a:visited {\n    color: #636363; }\n  a:hover {\n    color: #40E0D0;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n#github {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px;\n  margin-bottom: 0px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredDemo {\n  text-align: center; }\n  .featuredDemo:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n", ""]);
+exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nspan {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n  a:link {\n    color: #636363; }\n  a:visited {\n    color: #636363; }\n  a:hover {\n    color: #40E0D0;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n#github {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProj {\n  margin: 0px 10px; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px;\n  margin-bottom: 0px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredDemo {\n  text-align: center; }\n  .featuredDemo:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n", ""]);
 
 // exports
 
@@ -23129,11 +23129,7 @@ var GitRepos = function (_React$Component) {
 											'a',
 											{ target: '_blank', href: repo.html_url },
 											_react2.default.createElement('img', { src: 'files/img/gitLogo.png', style: { height: 30, width: 60 } }),
-											_react2.default.createElement(
-												'span',
-												null,
-												repo.name
-											)
+											repo.name
 										)
 									)
 								)
@@ -23181,12 +23177,7 @@ var FeaturedProjects = function (_React$Component) {
 	function FeaturedProjects(props) {
 		_classCallCheck(this, FeaturedProjects);
 
-		var _this = _possibleConstructorReturn(this, (FeaturedProjects.__proto__ || Object.getPrototypeOf(FeaturedProjects)).call(this, props));
-
-		_this.state = {
-			"repos": []
-		};
-		return _this;
+		return _possibleConstructorReturn(this, (FeaturedProjects.__proto__ || Object.getPrototypeOf(FeaturedProjects)).call(this, props));
 	}
 
 	_createClass(FeaturedProjects, [{
@@ -23202,7 +23193,7 @@ var FeaturedProjects = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					"div",
-					{ className: "row" },
+					{ className: "row", style: { height: window.innerHeight } },
 					_react2.default.createElement(
 						"div",
 						{ className: "container" },
@@ -23211,7 +23202,7 @@ var FeaturedProjects = function (_React$Component) {
 							{ className: "col-md-4" },
 							_react2.default.createElement(
 								"div",
-								{ className: "panel panel-default", style: { width: window.innerWidth / 4 } },
+								{ className: "panel panel-default featuredProj", style: { width: window.innerWidth / 4 } },
 								_react2.default.createElement(
 									"div",
 									{ className: "panel-body" },
@@ -23244,7 +23235,7 @@ var FeaturedProjects = function (_React$Component) {
 										_react2.default.createElement(
 											"li",
 											null,
-											"Built using React-Native with a Firebase data store (filled with public data from NYC Parks Dept)"
+											"Built using React-Native with a Firebase datastore filled with NYC Parks Dept data"
 										),
 										_react2.default.createElement(
 											"li",
@@ -23293,10 +23284,10 @@ var FeaturedProjects = function (_React$Component) {
 							{ className: "col-md-4" },
 							_react2.default.createElement(
 								"div",
-								{ className: "panel panel-default", style: { width: window.innerWidth / 4 } },
+								{ className: "panel panel-default featuredProj", style: { width: window.innerWidth / 4 } },
 								_react2.default.createElement(
 									"div",
-									{ className: "panel-body" },
+									{ className: "panel-body featuredProjContainer" },
 									_react2.default.createElement(
 										"p",
 										{ className: "featuredTitle" },
@@ -23326,49 +23317,44 @@ var FeaturedProjects = function (_React$Component) {
 										_react2.default.createElement(
 											"li",
 											null,
-											"Augmented-reality mobile app for iOS and Android that shows you the city's public art as you walk through the city."
+											"Mock e-commerce website selling fish including full checkout workflow"
 										),
 										_react2.default.createElement(
 											"li",
 											null,
-											"Built using React-Native with a Firebase data store (filled with public data from NYC Parks Dept)"
+											"Built using Express server back-end, PostgreSQL Sequelize datastore, and React and Redux front-end"
 										),
 										_react2.default.createElement(
 											"li",
 											null,
-											"Uses geolocation and compass/gyroscopic data to overlay information about nearby installations in the Camera View"
+											"Supports external Google authentication for both basic and admin users. Admin users have expanded functionality to manage inventory and orders"
 										),
 										_react2.default.createElement(
 											"li",
 											null,
-											"Map View displays all points of interest across all 5 boroughs"
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Includes real-time Likes, list of My Favorites, and browsing by most popular"
+											"Users can search and browse fish by category, leave reviews once logged in, and manage their account information"
 										)
 									),
 									_react2.default.createElement(
 										"p",
 										{ className: "featuredDemo" },
-										"Capstone project at Fullstack Academy with teammates ",
+										"\"Grace Shopper\" project at Fullstack Academy with teammates ",
 										_react2.default.createElement(
 											"a",
-											{ href: "https://github.com/christiancw" },
-											"Christian"
+											{ href: "https://github.com/elinemzer" },
+											"Eli"
 										),
 										", ",
 										_react2.default.createElement(
 											"a",
-											{ href: "https://github.com/phoyt1" },
-											"Pat"
+											{ href: "https://github.com/J-Wicks" },
+											"Jeremy"
 										),
 										", and ",
 										_react2.default.createElement(
 											"a",
-											{ href: "https://github.com/jhoscar1" },
-											"Jason"
+											{ href: "https://github.com/emilyacres" },
+											"Emily"
 										),
 										"."
 									)
