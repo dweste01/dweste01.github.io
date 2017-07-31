@@ -2955,6 +2955,16 @@ module.exports = DOMLazyTree;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(16);
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -2967,7 +2977,7 @@ module.exports = DOMLazyTree;
 
 
 
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginUtils = __webpack_require__(34);
 
 var accumulateInto = __webpack_require__(58);
@@ -3091,7 +3101,7 @@ module.exports = EventPropagators;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3371,7 +3381,7 @@ module.exports = EventPluginHub;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3435,7 +3445,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 module.exports = SyntheticUIEvent;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3484,16 +3494,6 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(16);
-
 
 /***/ }),
 /* 25 */
@@ -4063,7 +4063,7 @@ module.exports = TransactionImpl;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 var ViewportMetrics = __webpack_require__(65);
 
 var getEventModifierState = __webpack_require__(38);
@@ -5912,7 +5912,7 @@ module.exports = KeyEscapeUtils;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(10);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(11);
 
@@ -9201,7 +9201,7 @@ var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMContainerInfo = __webpack_require__(179);
 var ReactDOMFeatureFlags = __webpack_require__(180);
 var ReactFeatureFlags = __webpack_require__(62);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactMarkupChecksum = __webpack_require__(181);
 var ReactReconciler = __webpack_require__(18);
@@ -9763,7 +9763,7 @@ var _index = __webpack_require__(83);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(20);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -9819,7 +9819,7 @@ exports = module.exports = __webpack_require__(85)(undefined);
 
 
 // module
-exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #40E0D0; }\n  a:link {\n    color: #40E0D0; }\n  a:visited {\n    color: #40E0D0; }\n  a:hover {\n    color: #636363;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n#github {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProj {\n  margin: 0px 10px; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredLinks {\n  text-align: center; }\n  .featuredLinks:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n", ""]);
+exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #40E0D0; }\n  a:link {\n    color: #40E0D0; }\n  a:visited {\n    color: #40E0D0; }\n  a:hover {\n    color: #636363;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n.project {\n  padding: 0px;\n  margin: 0 10px; }\n\n.sectionTitle {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredLinks {\n  text-align: center; }\n  .featuredLinks:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n\n.aboutMe {\n  font-size: 16px; }\n", ""]);
 
 // exports
 
@@ -13139,7 +13139,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var FallbackCompositionState = __webpack_require__(108);
 var SyntheticCompositionEvent = __webpack_require__(109);
@@ -13711,8 +13711,8 @@ module.exports = SyntheticInputEvent;
 
 
 
-var EventPluginHub = __webpack_require__(21);
-var EventPropagators = __webpack_require__(20);
+var EventPluginHub = __webpack_require__(22);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
@@ -14768,7 +14768,7 @@ module.exports = DefaultEventPluginOrder;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticMouseEvent = __webpack_require__(29);
 
@@ -15570,7 +15570,7 @@ var DOMLazyTree = __webpack_require__(19);
 var DOMNamespaces = __webpack_require__(40);
 var DOMProperty = __webpack_require__(13);
 var DOMPropertyOperations = __webpack_require__(69);
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginRegistry = __webpack_require__(27);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactDOMComponentFlags = __webpack_require__(57);
@@ -17140,7 +17140,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 
 function runEventQueueInBatch(events) {
   EventPluginHub.enqueueEvents(events);
@@ -17873,7 +17873,7 @@ module.exports = ReactDOMTextarea;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactComponentEnvironment = __webpack_require__(43);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 
 var ReactCurrentOwner = __webpack_require__(10);
@@ -18488,7 +18488,7 @@ var React = __webpack_require__(16);
 var ReactComponentEnvironment = __webpack_require__(43);
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactErrorUtils = __webpack_require__(35);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 var ReactInstrumentation = __webpack_require__(8);
 var ReactNodeTypes = __webpack_require__(73);
 var ReactReconciler = __webpack_require__(18);
@@ -20584,7 +20584,7 @@ module.exports = getUnboundedScrollPosition;
 
 
 var DOMProperty = __webpack_require__(13);
-var EventPluginHub = __webpack_require__(21);
+var EventPluginHub = __webpack_require__(22);
 var EventPluginUtils = __webpack_require__(34);
 var ReactComponentEnvironment = __webpack_require__(43);
 var ReactEmptyComponent = __webpack_require__(74);
@@ -21514,7 +21514,7 @@ module.exports = SVGDOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInputSelection = __webpack_require__(78);
@@ -21711,7 +21711,7 @@ module.exports = SelectEventPlugin;
 var _prodInvariant = __webpack_require__(3);
 
 var EventListener = __webpack_require__(77);
-var EventPropagators = __webpack_require__(20);
+var EventPropagators = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticAnimationEvent = __webpack_require__(170);
 var SyntheticClipboardEvent = __webpack_require__(171);
@@ -21722,7 +21722,7 @@ var SyntheticMouseEvent = __webpack_require__(29);
 var SyntheticDragEvent = __webpack_require__(175);
 var SyntheticTouchEvent = __webpack_require__(176);
 var SyntheticTransitionEvent = __webpack_require__(177);
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 var SyntheticWheelEvent = __webpack_require__(178);
 
 var emptyFunction = __webpack_require__(9);
@@ -22026,7 +22026,7 @@ module.exports = SyntheticClipboardEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 /**
  * @interface FocusEvent
@@ -22067,7 +22067,7 @@ module.exports = SyntheticFocusEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 var getEventCharCode = __webpack_require__(49);
 var getEventKey = __webpack_require__(174);
@@ -22314,7 +22314,7 @@ module.exports = SyntheticDragEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(22);
+var SyntheticUIEvent = __webpack_require__(23);
 
 var getEventModifierState = __webpack_require__(38);
 
@@ -22654,7 +22654,7 @@ var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactInstanceMap = __webpack_require__(23);
+var ReactInstanceMap = __webpack_require__(24);
 
 var getHostComponentFromComposite = __webpack_require__(81);
 var invariant = __webpack_require__(1);
@@ -22994,12 +22994,12 @@ module.exports = ReactDOMInvalidARIAHook;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(20);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23011,6 +23011,10 @@ var _FeaturedProjects = __webpack_require__(191);
 
 var _FeaturedProjects2 = _interopRequireDefault(_FeaturedProjects);
 
+var _AboutMe = __webpack_require__(192);
+
+var _AboutMe2 = _interopRequireDefault(_AboutMe);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23020,32 +23024,33 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var AppContainer = function (_React$Component) {
-	_inherits(AppContainer, _React$Component);
+  _inherits(AppContainer, _React$Component);
 
-	function AppContainer(props) {
-		_classCallCheck(this, AppContainer);
+  function AppContainer(props) {
+    _classCallCheck(this, AppContainer);
 
-		return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).call(this, props));
-	}
+    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).call(this, props));
+  }
 
-	_createClass(AppContainer, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(
-					'p',
-					{ id: 'title', className: 'animated fadeIn', style: { marginTop: window.innerHeight / 2 - 44, marginBottom: window.innerHeight / 2 - 34 } },
-					'Danielle Westerman'
-				),
-				_react2.default.createElement(_FeaturedProjects2.default, null),
-				_react2.default.createElement(_GitRepos2.default, null)
-			);
-		}
-	}]);
+  _createClass(AppContainer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'p',
+          { id: 'title', className: 'animated fadeIn', style: { marginTop: window.innerHeight / 2 - 44, marginBottom: window.innerHeight / 2 - 34 } },
+          'Danielle Westerman'
+        ),
+        _react2.default.createElement(_AboutMe2.default, null),
+        _react2.default.createElement(_FeaturedProjects2.default, null),
+        _react2.default.createElement(_GitRepos2.default, null)
+      );
+    }
+  }]);
 
-	return AppContainer;
+  return AppContainer;
 }(_react2.default.Component);
 
 exports.default = AppContainer;
@@ -23058,12 +23063,12 @@ exports.default = AppContainer;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(20);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23076,76 +23081,78 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var GitRepos = function (_React$Component) {
-	_inherits(GitRepos, _React$Component);
+  _inherits(GitRepos, _React$Component);
 
-	function GitRepos(props) {
-		_classCallCheck(this, GitRepos);
+  function GitRepos(props) {
+    _classCallCheck(this, GitRepos);
 
-		var _this = _possibleConstructorReturn(this, (GitRepos.__proto__ || Object.getPrototypeOf(GitRepos)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (GitRepos.__proto__ || Object.getPrototypeOf(GitRepos)).call(this, props));
 
-		_this.state = {
-			"repos": []
-		};
-		return _this;
-	}
+    _this.state = {
+      "repos": []
+    };
+    return _this;
+  }
 
-	_createClass(GitRepos, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
-			var _this2 = this;
+  _createClass(GitRepos, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
 
-			$.ajax('https://api.github.com/users/dweste01/repos').then(function (res) {
-				_this2.setState({ 'repos': res });
-			}).catch(console.error);
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(
-					'p',
-					{ id: 'github', className: 'wow zoomIn' },
-					'Github Repos'
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'row' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'container' },
-						this.state.repos.map(function (repo, idx) {
-							return _react2.default.createElement(
-								'div',
-								{ key: idx, className: 'col-md-4' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'panel panel-default', style: { marginLeft: 30, marginRight: 30 } },
-									_react2.default.createElement(
-										'div',
-										{ className: 'panel-body' },
-										_react2.default.createElement(
-											'a',
-											{ target: '_blank', href: repo.html_url },
-											_react2.default.createElement('img', { src: 'files/img/gitLogo.png', style: { height: 30, width: 60 } }),
-											_react2.default.createElement(
-												'span',
-												{ style: { fontSize: 16 } },
-												repo.name
-											)
-										)
-									)
-								)
-							);
-						})
-					)
-				)
-			);
-		}
-	}]);
+      $.ajax('https://api.github.com/users/dweste01/repos').then(function (res) {
+        _this2.setState({ 'repos': res });
+      }).catch(console.error);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var size = void 0;
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'p',
+          { className: 'sectionTitle wow zoomIn' },
+          '...More Github Repos'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'githubContainer col-md-10 col-md-offset-1' },
+            this.state.repos.map(function (repo, idx) {
+              repo.name.length > 12 ? repo.name.length > 20 ? size = 10.75 : size = 12 : size = 14;
+              return _react2.default.createElement(
+                'div',
+                { key: idx, className: 'col-md-4' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'panel panel-default', style: { marginLeft: 30, marginRight: 30 } },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'panel-body' },
+                    _react2.default.createElement(
+                      'a',
+                      { target: '_blank', href: repo.html_url },
+                      _react2.default.createElement('img', { src: 'files/img/gitLogo.png', style: { height: 30, width: 60, marginLeft: -15 } }),
+                      _react2.default.createElement(
+                        'span',
+                        { style: { fontSize: size, marginLeft: -15 } },
+                        repo.name
+                      )
+                    )
+                  )
+                )
+              );
+            })
+          )
+        )
+      );
+    }
+  }]);
 
-	return GitRepos;
+  return GitRepos;
 }(_react2.default.Component);
 
 exports.default = GitRepos;
@@ -23158,241 +23165,351 @@ exports.default = GitRepos;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(24);
+var _react = __webpack_require__(20);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+exports.default = function () {
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+  return _react2.default.createElement(
+    'div',
+    { style: { marginTop: 20, marginBottom: 20 } },
+    _react2.default.createElement(
+      'p',
+      { className: 'sectionTitle wow zoomIn' },
+      'Featured Projects'
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'row' },
+      _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-md-4' },
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default featuredProj' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body' },
+              _react2.default.createElement(
+                'p',
+                { className: 'featuredTitle' },
+                'I (AR)t NY'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'row', style: { marginBottom: 10 } },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'https://www.youtube.com/watch?v=Cal59NL6_0c' },
+                    'Demo'
+                  )
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://github.com/jhoscar1/capstone' },
+                    'Github'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'ul',
+                { className: 'list' },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Augmented-reality mobile app for iOS and Android that shows you the city\'s public art as you walk through the city.'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Built using React-Native with a Firebase datastore filled with NYC Parks Dept data'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Uses geolocation and compass/gyroscopic data to overlay information about nearby installations in the Camera View'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Map View displays all points of interest across all 5 boroughs'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Includes real-time Likes, list of My Favorites, and browsing by most popular'
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                { className: 'featuredLinks' },
+                '4-week Capstone project at Fullstack Academy',
+                _react2.default.createElement('br', null),
+                'Teammates: ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/christiancw' },
+                  'Christian'
+                ),
+                ', ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/phoyt1' },
+                  'Pat'
+                ),
+                ', & ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/jhoscar1' },
+                  'Jason'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-md-4' },
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default featuredProj' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body featuredProjContainer' },
+              _react2.default.createElement(
+                'p',
+                { className: 'featuredTitle' },
+                'Pisces Aquascaping'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'row', style: { marginBottom: 10 } },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://piscesaquascaping.herokuapp.com/' },
+                    'Deployed'
+                  )
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'https://github.com/elinemzer/grace-shopper' },
+                    'Github'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'ul',
+                { className: 'list' },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Mock e-commerce website selling fish including full checkout workflow'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Built using Express server back-end, PostgreSQL Sequelize datastore, and React-Redux front-end'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Supports external Google authentication for both basic and admin users. Admin users have expanded functionality to manage inventory and orders'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Users can search and browse fish by category, leave reviews once logged in, and manage their account information'
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                { className: 'featuredLinks' },
+                '2-week "Grace Shopper" project at Fullstack Academy',
+                _react2.default.createElement('br', null),
+                'Teammates: ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/elinemzer' },
+                  'Eli'
+                ),
+                ', ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/J-Wicks' },
+                  'Jeremy'
+                ),
+                ', & ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/emilyacres' },
+                  'Emily'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-md-4' },
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default featuredProj' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body' },
+              _react2.default.createElement(
+                'p',
+                { className: 'featuredTitle' },
+                'Live2Eat'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'row', style: { marginBottom: 10 } },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'https://live2eat.herokuapp.com/' },
+                    'Deployed'
+                  )
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://github.com/dweste01/stackathon' },
+                    'Github'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'ul',
+                { className: 'list' },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Single-page web application that aggregates reviews for nearby restaurants based on price and delivery presets'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Built using Express server back-end and React-Redux front-end; utilizes Google Maps, Google Places, and Yelp APIs'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Custom map markers color-coded by price'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Provides overall restaurant ratings based on Google and Yelp reviews'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Restaurants shown based on user\'s choice of \'delivery only\' or \'all restaurants\', and minimum and maximum price'
+                )
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'featuredLinks' },
+                '3-day solo Hackathon project at Fullstack Academy'
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
 
-var FeaturedProjects = function (_React$Component) {
-	_inherits(FeaturedProjects, _React$Component);
+"use strict";
 
-	function FeaturedProjects(props) {
-		_classCallCheck(this, FeaturedProjects);
 
-		return _possibleConstructorReturn(this, (FeaturedProjects.__proto__ || Object.getPrototypeOf(FeaturedProjects)).call(this, props));
-	}
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-	_createClass(FeaturedProjects, [{
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"div",
-				null,
-				_react2.default.createElement(
-					"p",
-					{ id: "github", className: "wow zoomIn" },
-					"Featured Projects"
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "row", style: { height: window.innerHeight } },
-					_react2.default.createElement(
-						"div",
-						{ className: "container" },
-						_react2.default.createElement(
-							"div",
-							{ className: "col-md-4" },
-							_react2.default.createElement(
-								"div",
-								{ className: "panel panel-default featuredProj", style: { width: window.innerWidth / 4 } },
-								_react2.default.createElement(
-									"div",
-									{ className: "panel-body" },
-									_react2.default.createElement(
-										"p",
-										{ className: "featuredTitle" },
-										"I (AR)t NY"
-									),
-									_react2.default.createElement(
-										"div",
-										{ className: "row", style: { marginBottom: 10 } },
-										_react2.default.createElement(
-											"span",
-											{ className: "featuredLinks col-md-6" },
-											_react2.default.createElement(
-												"a",
-												{ href: "https://www.youtube.com/watch?v=Cal59NL6_0c" },
-												"Demo"
-											)
-										),
-										_react2.default.createElement(
-											"span",
-											null,
-											"     "
-										),
-										_react2.default.createElement(
-											"span",
-											{ className: "featuredLinks col-md-6" },
-											_react2.default.createElement(
-												"a",
-												{ target: "_blank", href: "https://github.com/jhoscar1/capstone" },
-												"Github"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"ul",
-										{ className: "list" },
-										_react2.default.createElement(
-											"li",
-											null,
-											"Augmented-reality mobile app for iOS and Android that shows you the city's public art as you walk through the city."
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Built using React-Native with a Firebase datastore filled with NYC Parks Dept data"
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Uses geolocation and compass/gyroscopic data to overlay information about nearby installations in the Camera View"
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Map View displays all points of interest across all 5 boroughs"
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Includes real-time Likes, list of My Favorites, and browsing by most popular"
-										)
-									),
-									_react2.default.createElement(
-										"p",
-										{ className: "featuredLinks" },
-										"4-week Capstone project at Fullstack Academy with teammates ",
-										_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/christiancw" },
-											"Christian"
-										),
-										", ",
-										_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/phoyt1" },
-											"Pat"
-										),
-										", & ",
-										_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/jhoscar1" },
-											"Jason"
-										),
-										"."
-									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "col-md-4" },
-							_react2.default.createElement(
-								"div",
-								{ className: "panel panel-default featuredProj", style: { width: window.innerWidth / 4 } },
-								_react2.default.createElement(
-									"div",
-									{ className: "panel-body featuredProjContainer" },
-									_react2.default.createElement(
-										"p",
-										{ className: "featuredTitle" },
-										"Pisces Aquascaping"
-									),
-									_react2.default.createElement(
-										"div",
-										{ className: "row", style: { marginBottom: 10 } },
-										_react2.default.createElement(
-											"span",
-											{ className: "featuredLinks col-md-6" },
-											_react2.default.createElement(
-												"a",
-												{ target: "_blank", href: "https://piscesaquascaping.herokuapp.com/" },
-												"Deployed"
-											)
-										),
-										_react2.default.createElement(
-											"span",
-											{ className: "featuredLinks col-md-6" },
-											_react2.default.createElement(
-												"a",
-												{ href: "https://github.com/elinemzer/grace-shopper" },
-												"Github"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"ul",
-										{ className: "list" },
-										_react2.default.createElement(
-											"li",
-											null,
-											"Mock e-commerce website selling fish including full checkout workflow"
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Built using Express server back-end, PostgreSQL Sequelize datastore, and React and Redux front-end"
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Supports external Google authentication for both basic and admin users. Admin users have expanded functionality to manage inventory and orders"
-										),
-										_react2.default.createElement(
-											"li",
-											null,
-											"Users can search and browse fish by category, leave reviews once logged in, and manage their account information"
-										)
-									),
-									_react2.default.createElement(
-										"p",
-										{ className: "featuredLinks" },
-										"2-week \"Grace Shopper\" project at Fullstack Academy with teammates ",
-										_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/elinemzer" },
-											"Eli"
-										),
-										", ",
-										_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/J-Wicks" },
-											"Jeremy"
-										),
-										", & ",
-										_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/emilyacres" },
-											"Emily"
-										),
-										"."
-									)
-								)
-							)
-						)
-					)
-				)
-			);
-		}
-	}]);
+var _react = __webpack_require__(20);
 
-	return FeaturedProjects;
-}(_react2.default.Component);
+var _react2 = _interopRequireDefault(_react);
 
-exports.default = FeaturedProjects;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'p',
+      { className: 'sectionTitle wow zoomIn' },
+      'About Me'
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'row' },
+      _react2.default.createElement(
+        'div',
+        { className: 'col-md-8 col-md-offset-2' },
+        _react2.default.createElement(
+          'p',
+          { className: 'aboutMe' },
+          'I was born and raised in New Jersey, although I have lived in Boston since I began studying at Tufts University in 2011. There, I majored in Cognitive and Brain Sciences, which is primarily a psychology degree, but interdisciplinary, and first introduced me to Computer Science. I loved the challenge of programming and decided to double major in Computer Science as well. At Tufts, I was also a member of the varsity swim team, and had the opportunity to spend a semester abroad in Copenhagen, Denmark!'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'aboutMe' },
+          'Upon graduating in 2015 I worked as a QA Intern at The Debt Exchange in Boston, MA where I wrote user stories and executed test plans for newly-pushed code for their online loan-sales platform. DebtX followed Agile methodology, and I also got to participate in daily standups and biweekly retrospectives.'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'aboutMe' },
+          'In August 2015 I began working at Huron Consulting Group as an Oracle application analyst in their Enterprise Systems & Analytics (ES&A) practice. As an Oracle platinum partner, we implemented the Oracle suite of financial reporting applications for large enterprises; I personally specialized in configuring their masterdata management tool, DRM (Data Relationship Management). In addition to the design, configuration, and deployment of the application, I was also responsible for writing documentation and leading knowledge-transfer and training sessions for admins and stakeholders.'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'aboutMe' },
+          'However, I wanted to move to a more technical role, and found myself still playing around on CodeWars on weekends- I\'ve always loved puzzles and logic problems, and I remember how much I was challenged by and enjoyed my CS classes in college. In March 2017 I left Huron to attend Fullstack Academy in NYC, which is an immersive web-development bootcamp where I learned end-to-end Javascript development.'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'aboutMe' },
+          'I\'m super passionate about the entire technology stack, but particularly the front end. I love to challenge myself and stretch my limits, and am always hungry to learn more. I\'m also a HUGE beach bum (I grew up going to the Jersey shore), and I have a 14-year old dog named Chad. I\'ve read the Harry Potter series 5 times, and I love cooking, crossword puzzles, and huge cups of coffee!'
+        )
+      )
+    )
+  );
+};
 
 /***/ })
 /******/ ]);
