@@ -30,7 +30,6 @@ export default class GitRepos extends React.Component {
                 <div className="panel panel-default" style={{marginLeft: 30, marginRight: 30}}>
                   <div className="panel-body">
                   <a target="_blank" href={repo.html_url}>
-                    <img src='files/img/gitLogo.png' style={{height: 30, width: 60, marginLeft: -15}}></img>
                     <span style={{fontSize: size, marginLeft: -15}}>{repo.name}</span>
                   </a>
                   </div>
@@ -44,3 +43,4 @@ export default class GitRepos extends React.Component {
     )
   }
 }
+                    // <img src='files/img/gitLogo.png' style={{height: 30, width: 60, marginLeft: -15}}></img>
