@@ -2,18 +2,13 @@
 
 const express = require('express');
 const app = express();
-const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
-
-app.use(morgan('dev'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.use('/api', require('./api'));
-
-// bundle needs this line
+// static files
 app.use('/public', express.static(path.join(__dirname, '../public')));
 
 app.use(express.static(path.join(__dirname, '../node_modules')))
