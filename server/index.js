@@ -19,7 +19,7 @@ app.use('/public', express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')))
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, '../browser/index.html'))
+  res.sendFile(path.join(__dirname, '../index.html'))
 });
 
 app.use(function (err, req, res, next) {

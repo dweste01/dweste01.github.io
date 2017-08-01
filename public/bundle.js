@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/public/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 82);
@@ -23135,7 +23135,7 @@ var GitRepos = function (_React$Component) {
                     _react2.default.createElement(
                       'a',
                       { target: '_blank', href: repo.html_url },
-                      _react2.default.createElement('img', { src: 'files/img/gitLogo.png', style: { height: 30, width: 60, marginLeft: -15 } }),
+                      _react2.default.createElement('img', { src: 'public/img/gitLogo.png', style: { height: 30, width: 60, marginLeft: -15 } }),
                       _react2.default.createElement(
                         'span',
                         { style: { fontSize: size, marginLeft: -15 } },
