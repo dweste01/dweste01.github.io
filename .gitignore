@@ -1,5 +1,4 @@
 .babelrc
 package.json
 node_modules
-bundle.js
 bundle.js.map
