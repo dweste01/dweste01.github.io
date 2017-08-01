@@ -50,6 +50,12 @@ a {
 	justify-content: space-between;
 }
 
+.featuredProj {
+	&:hover {
+		box-shadow: -5px 5px 5px $text-color
+	}
+}
+
 .featuredTitle {
 	text-align: center;
 	font-size: 24px;

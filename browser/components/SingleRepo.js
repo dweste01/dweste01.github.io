@@ -13,7 +13,7 @@ export default (props) => {
   }
 
   return (
-    <div className="panel panel-default" style={{marginLeft: 30, marginRight: 30}}>
+    <div className="panel panel-default featuredProj" style={{marginLeft: 30, marginRight: 30}}>
       <div className="panel-body">
         <a target="_blank" href={repo.html_url}>
           <img src='public/img/gitLogo.png' className="gitLogo"></img>

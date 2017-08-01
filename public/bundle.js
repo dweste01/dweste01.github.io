@@ -9819,7 +9819,7 @@ exports = module.exports = __webpack_require__(85)(undefined);
 
 
 // module
-exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #00ccdb; }\n  a:link {\n    color: #00ccdb; }\n  a:visited {\n    color: #00ccdb; }\n  a:hover {\n    color: #636363;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n.project {\n  padding: 0px;\n  margin: 0 10px; }\n\n.sectionTitle {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredLinks {\n  text-align: center; }\n  .featuredLinks:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n\n.aboutMe {\n  font-size: 16px;\n  line-height: 25px; }\n\n#thisSite {\n  color: #636363;\n  font-size: 10px;\n  font-family: 'Raleway', sans-serif;\n  text-align: center;\n  margin-bottom: -7px;\n  margin-top: -7px; }\n\n#wip {\n  text-align: center;\n  font-size: 10px;\n  letter-spacing: 5px; }\n\n.gitLogo {\n  height: 30px;\n  width: 60px;\n  margin-left: -15px; }\n", ""]);
+exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #00ccdb; }\n  a:link {\n    color: #00ccdb; }\n  a:visited {\n    color: #00ccdb; }\n  a:hover {\n    color: #636363;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n.project {\n  padding: 0px;\n  margin: 0 10px; }\n\n.sectionTitle {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n\n.featuredProj:hover {\n  box-shadow: -5px 5px 5px #636363; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredLinks {\n  text-align: center; }\n  .featuredLinks:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n\n.aboutMe {\n  font-size: 16px;\n  line-height: 25px; }\n\n#thisSite {\n  color: #636363;\n  font-size: 10px;\n  font-family: 'Raleway', sans-serif;\n  text-align: center;\n  margin-bottom: -7px;\n  margin-top: -7px; }\n\n#wip {\n  text-align: center;\n  font-size: 10px;\n  letter-spacing: 5px; }\n\n.gitLogo {\n  height: 30px;\n  width: 60px;\n  margin-left: -15px; }\n", ""]);
 
 // exports
 
@@ -23109,7 +23109,11 @@ var GitRepos = function (_React$Component) {
       var _this2 = this;
 
       $.ajax('https://api.github.com/users/dweste01/repos').then(function (res) {
-        _this2.setState({ 'repos': res });
+        console.log(res);
+        var sortedByDate = res.sort(function (a, b) {
+          return b.id - a.id;
+        });
+        _this2.setState({ 'repos': sortedByDate });
       }).catch(console.error);
     }
   }, {
@@ -23179,7 +23183,7 @@ exports.default = function (props) {
 
   return _react2.default.createElement(
     "div",
-    { className: "panel panel-default", style: { marginLeft: 30, marginRight: 30 } },
+    { className: "panel panel-default featuredProj", style: { marginLeft: 30, marginRight: 30 } },
     _react2.default.createElement(
       "div",
       { className: "panel-body" },

@@ -12,7 +12,11 @@ export default class GitRepos extends React.Component {
   componentDidMount() {
     $.ajax('https://api.github.com/users/dweste01/repos')
     .then(res => {
-      this.setState({'repos': res});
+      console.log(res);
+      let sortedByDate = res.sort((a, b) => {
+        return b.id - a.id
+      })
+      this.setState({'repos': sortedByDate});
     }).catch(console.error)
   }
 
