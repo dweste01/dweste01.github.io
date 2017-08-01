@@ -2,7 +2,16 @@ import React from 'react';
 
 export default (props) => {
   const repo = props.gitRepo;
-  const size = props.fontSize;
+  let size;
+
+  if (repo.name.length > 20) {
+    size = 10.75;
+  } else if (repo.name.length > 12) {
+    size = 12;
+  } else {
+    size = 14;
+  }
+
   return (
     <div className="panel panel-default" style={{marginLeft: 30, marginRight: 30}}>
       <div className="panel-body">
@@ -11,7 +20,10 @@ export default (props) => {
           <span style={{fontSize: size, marginLeft: -15}}>{repo.name}</span>
         </a>
       {
-        (repo.name=='dweste01.github.io') ? <span id="thisSite">  this site!</span>
+        (repo.name=='dweste01.github.io') ?
+        <p id="thisSite">
+          <span className="glyphicon glyphicon-star" aria-hidden="true" /> this site! <span className="glyphicon glyphicon-star" aria-hidden="true" />
+        </p>
         : null
       }
     </div>
