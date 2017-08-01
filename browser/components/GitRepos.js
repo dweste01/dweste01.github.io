@@ -12,6 +12,7 @@ export default class GitRepos extends React.Component {
     $.ajax('https://api.github.com/users/dweste01/repos')
     .then(res => {
       this.setState({'repos': res});
+      console.log(res);
     }).catch(console.error)
   }
 
@@ -33,6 +34,10 @@ export default class GitRepos extends React.Component {
                     <img src='public/img/gitLogo.png' style={{height: 30, width: 60, marginLeft: -15}}></img>
                     <span style={{fontSize: size, marginLeft: -15}}>{repo.name}</span>
                   </a>
+                    {
+                      (repo.name=='dweste01.github.io') ? <span id="thisSite">this site!</span>
+                      : null
+                    }
                   </div>
                 </div>
               </div>)
