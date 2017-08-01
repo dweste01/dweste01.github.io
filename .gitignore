@@ -1,6 +1,5 @@
 .babelrc
 package.json
-webpack.config.js
 node_modules
 bundle.js
 bundle.js.map
