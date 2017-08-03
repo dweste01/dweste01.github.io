@@ -22,7 +22,7 @@ a {
 	}
 	&:hover {
 		color: $text-color;
-		text-decoration: none;
+		text-decoration-color: $link-color;
 	};
 }
 
@@ -104,4 +104,10 @@ a {
 	height: 30px;
 	width: 60px;
 	margin-left: -15px;
+}
+
+.tech {
+	text-decoration: underline;
+	text-decoration-color: $link-color;
+	font-weight: bold;
 }

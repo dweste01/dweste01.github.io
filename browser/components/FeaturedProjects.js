@@ -25,7 +25,7 @@ export default () => {
                   Augmented-reality mobile app for iOS and Android that shows you the city's public art as you walk through the city.
                 </li>
                 <li>
-                  Built using React-Native with a Firebase datastore filled with NYC Parks Dept data
+                  Built using <span className='tech'>React-Native</span> with a <span className='tech'>Firebase</span> datastore filled with NYC Parks Dept data
                 </li>
                 <li>
                   Uses geolocation and compass/gyroscopic data to overlay information about nearby installations in the Camera View
@@ -38,7 +38,7 @@ export default () => {
                 </li>
               </ul>
               <p className="featuredLinks">
-                4-week Capstone project at Fullstack Academy<br/>Teammates: <a href='https://github.com/christiancw'>Christian</a>, <a href='https://github.com/phoyt1'>Pat</a>, & <a href='https://github.com/jhoscar1'>Jason</a>
+                Four week Capstone project at Fullstack Academy<br/>Teammates: <a href='https://github.com/christiancw'>Christian</a>, <a href='https://github.com/phoyt1'>Pat</a>, & <a href='https://github.com/jhoscar1'>Jason</a>
               </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ export default () => {
                   Mock e-commerce website selling fish including full checkout workflow
                 </li>
                 <li>
-                  Built using Express server back-end, PostgreSQL Sequelize datastore, and React-Redux front-end 
+                  Built using <span className='tech'>Express</span> server back-end, PostgreSQL <span className='tech'>Sequelize</span> datastore, and <span className='tech'>React</span> and <span className='tech'>Redux</span> front-end 
                 </li>
                 <li>
                   Supports external Google authentication for both basic and admin users. Admin users have expanded functionality to manage inventory and orders
@@ -72,7 +72,7 @@ export default () => {
                 </li>
               </ul>
               <p className="featuredLinks">
-                2-week "Grace Shopper" project at Fullstack Academy<br/>Teammates: <a href='https://github.com/elinemzer'>Eli</a>, <a href='https://github.com/J-Wicks'>Jeremy</a>, & <a href='https://github.com/emilyacres'>Emily</a>
+                Two week "Grace Shopper" project at Fullstack Academy<br/>Teammates: <a href='https://github.com/elinemzer'>Eli</a>, <a href='https://github.com/J-Wicks'>Jeremy</a>, & <a href='https://github.com/emilyacres'>Emily</a>
               </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default () => {
                   Single-page web application that aggregates reviews for nearby restaurants based on price and delivery presets
                 </li>
                 <li>
-                  Built using Express server back-end and React-Redux front-end; utilizes Google Maps, Google Places, and Yelp APIs
+                  Built using <span className='tech'>Express</span> server back-end and <span className='tech'>React-Redux</span> front-end; utilizes <span className='tech'>Google Maps</span>, <span className='tech'>Google Places</span>, and <span className='tech'>Yelp APIs</span>
                 </li>
                 <li>
                   Custom map markers color-coded by price

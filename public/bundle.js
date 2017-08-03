@@ -9819,7 +9819,7 @@ exports = module.exports = __webpack_require__(85)(undefined);
 
 
 // module
-exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #00ccdb; }\n  a:link {\n    color: #00ccdb; }\n  a:visited {\n    color: #00ccdb; }\n  a:hover {\n    color: #636363;\n    text-decoration: none; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n.project {\n  padding: 0px;\n  margin: 0 10px; }\n\n.sectionTitle {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n\n.featuredProj:hover {\n  box-shadow: -5px 5px 5px #636363; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredLinks {\n  text-align: center; }\n  .featuredLinks:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n\n.aboutMe {\n  font-size: 16px;\n  line-height: 25px; }\n\n#thisSite {\n  color: #636363;\n  font-size: 10px;\n  font-family: 'Raleway', sans-serif;\n  text-align: center;\n  margin-bottom: -7px;\n  margin-top: -7px; }\n\n#wip {\n  text-align: center;\n  font-size: 10px;\n  letter-spacing: 5px; }\n\n.gitLogo {\n  height: 30px;\n  width: 60px;\n  margin-left: -15px; }\n", ""]);
+exports.push([module.i, "p {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\nul {\n  font-family: 'Raleway', sans-serif;\n  color: #636363; }\n\na {\n  font-family: 'Raleway', sans-serif;\n  color: #00ccdb; }\n  a:link {\n    color: #00ccdb; }\n  a:visited {\n    color: #00ccdb; }\n  a:hover {\n    color: #636363;\n    text-decoration-color: #00ccdb; }\n\n#title {\n  text-align: center;\n  font-size: 60px;\n  -webkit-animation-duration: 4s;\n  letter-spacing: 7px; }\n\n.project {\n  padding: 0px;\n  margin: 0 10px; }\n\n.sectionTitle {\n  text-align: center;\n  font-size: 40px;\n  -webkit-animation-duration: 1s; }\n\n.featuredProjContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n\n.featuredProj:hover {\n  box-shadow: -5px 5px 5px #636363; }\n\n.featuredTitle {\n  text-align: center;\n  font-size: 24px; }\n  .featuredTitle:hover {\n    text-decoration: none; }\n\n.featuredLinks {\n  text-align: center; }\n  .featuredLinks:hover {\n    text-decoration: none; }\n\n.container {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap; }\n\n.list {\n  padding-left: 20px; }\n\n.aboutMe {\n  font-size: 16px;\n  line-height: 25px; }\n\n#thisSite {\n  color: #636363;\n  font-size: 10px;\n  font-family: 'Raleway', sans-serif;\n  text-align: center;\n  margin-bottom: -7px;\n  margin-top: -7px; }\n\n#wip {\n  text-align: center;\n  font-size: 10px;\n  letter-spacing: 5px; }\n\n.gitLogo {\n  height: 30px;\n  width: 60px;\n  margin-left: -15px; }\n\n.tech {\n  text-decoration: underline;\n  text-decoration-color: #00ccdb;\n  font-weight: bold; }\n", ""]);
 
 // exports
 
@@ -23015,6 +23015,10 @@ var _AboutMe = __webpack_require__(193);
 
 var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
+var _Current = __webpack_require__(194);
+
+var _Current2 = _interopRequireDefault(_Current);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23050,6 +23054,7 @@ var AppContainer = function (_React$Component) {
         ),
         _react2.default.createElement(_AboutMe2.default, null),
         _react2.default.createElement(_FeaturedProjects2.default, null),
+        _react2.default.createElement(_Current2.default, null),
         _react2.default.createElement(_GitRepos2.default, null)
       );
     }
@@ -23288,7 +23293,19 @@ exports.default = function () {
                 _react2.default.createElement(
                   'li',
                   null,
-                  'Built using React-Native with a Firebase datastore filled with NYC Parks Dept data'
+                  'Built using ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'React-Native'
+                  ),
+                  ' with a ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Firebase'
+                  ),
+                  ' datastore filled with NYC Parks Dept data'
                 ),
                 _react2.default.createElement(
                   'li',
@@ -23309,7 +23326,7 @@ exports.default = function () {
               _react2.default.createElement(
                 'p',
                 { className: 'featuredLinks' },
-                '4-week Capstone project at Fullstack Academy',
+                'Four week Capstone project at Fullstack Academy',
                 _react2.default.createElement('br', null),
                 'Teammates: ',
                 _react2.default.createElement(
@@ -23380,7 +23397,31 @@ exports.default = function () {
                 _react2.default.createElement(
                   'li',
                   null,
-                  'Built using Express server back-end, PostgreSQL Sequelize datastore, and React-Redux front-end'
+                  'Built using ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Express'
+                  ),
+                  ' server back-end, PostgreSQL ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Sequelize'
+                  ),
+                  ' datastore, and ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'React'
+                  ),
+                  ' and ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Redux'
+                  ),
+                  ' front-end'
                 ),
                 _react2.default.createElement(
                   'li',
@@ -23396,7 +23437,7 @@ exports.default = function () {
               _react2.default.createElement(
                 'p',
                 { className: 'featuredLinks' },
-                '2-week "Grace Shopper" project at Fullstack Academy',
+                'Two week "Grace Shopper" project at Fullstack Academy',
                 _react2.default.createElement('br', null),
                 'Teammates: ',
                 _react2.default.createElement(
@@ -23467,7 +23508,36 @@ exports.default = function () {
                 _react2.default.createElement(
                   'li',
                   null,
-                  'Built using Express server back-end and React-Redux front-end; utilizes Google Maps, Google Places, and Yelp APIs'
+                  'Built using ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Express'
+                  ),
+                  ' server back-end and ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'React-Redux'
+                  ),
+                  ' front-end; utilizes ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Google Maps'
+                  ),
+                  ', ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Google Places'
+                  ),
+                  ', and ',
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tech' },
+                    'Yelp APIs'
+                  )
                 ),
                 _react2.default.createElement(
                   'li',
@@ -23556,6 +23626,87 @@ exports.default = function () {
           'p',
           { className: 'aboutMe' },
           'I\'m super passionate about the entire technology stack, but particularly the front end. I love to challenge myself and stretch my limits, and am always hungry to learn more. I\'m also a big beach bum, and I have a 13-year old dog named Chad. I\'ve read the Harry Potter series 5 times, and I love cooking, crossword puzzles, and huge cups of coffee!'
+        )
+      )
+    )
+  );
+};
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(16);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (props) {
+  return _react2.default.createElement(
+    'div',
+    { style: { marginTop: 20, marginBottom: 20 } },
+    _react2.default.createElement(
+      'p',
+      { className: 'sectionTitle wow zoomIn' },
+      'Currently Working On...'
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'row' },
+      _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-md-4' },
+          _react2.default.createElement(
+            'div',
+            { className: 'panel panel-default featuredProj' },
+            _react2.default.createElement(
+              'div',
+              { className: 'panel-body' },
+              _react2.default.createElement(
+                'p',
+                { className: 'featuredTitle' },
+                'NYC Art Visualization'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'row', style: { marginBottom: 10 } },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-offset-3 col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://github.com/dweste01/NYCArtVis' },
+                    'Github'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'ul',
+                { className: 'list' },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Data visualization project using same public data set as I (AR)t NY'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Learning D3 and Angular'
+                )
+              )
+            )
+          )
         )
       )
     )
