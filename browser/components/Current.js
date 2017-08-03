@@ -20,7 +20,7 @@ export default (props) => {
                     Data visualization project using same public data set as I (AR)t NY
                   </li>
                   <li>
-                    Learning D3 and Angular
+                    Learning D3
                   </li>
                 </ul>
               </div>
