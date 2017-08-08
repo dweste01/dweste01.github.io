@@ -10,11 +10,14 @@ export default (props) => {
               <div className="panel panel-default featuredProj">
                 <div className="panel-body">
                 <p className="featuredTitle">NYC Art Visualization</p>
-                  <div className="row" style={{marginBottom: 10}}>
-                    <span className="featuredLinks col-md-offset-3 col-md-6">
-                      <a target="_blank" href='https://github.com/dweste01/NYCArtVis'>Github</a>
-                    </span>
-                  </div>
+                <div className="row" style={{marginBottom: 10}}>
+                  <span className="featuredLinks col-md-6">
+                    <a href='https://dweste01.github.io/NYCArtVis'>Deployed GHPage</a>
+                  </span>
+                  <span className="featuredLinks col-md-6">
+                    <a target="_blank" href='https://github.com/dweste01/NYCArtVis'>Github Repo</a>
+                  </span>
+                </div>
                 <ul className='list'>
                   <li>
                     Data visualization project using same public data set as I (AR)t NY

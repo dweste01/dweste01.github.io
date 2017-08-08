@@ -23683,11 +23683,20 @@ exports.default = function (props) {
                 { className: 'row', style: { marginBottom: 10 } },
                 _react2.default.createElement(
                   'span',
-                  { className: 'featuredLinks col-md-offset-3 col-md-6' },
+                  { className: 'featuredLinks col-md-6' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'https://dweste01.github.io/NYCArtVis' },
+                    'Deployed GHPage'
+                  )
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'featuredLinks col-md-6' },
                   _react2.default.createElement(
                     'a',
                     { target: '_blank', href: 'https://github.com/dweste01/NYCArtVis' },
-                    'Github'
+                    'Github Repo'
                   )
                 )
               ),
